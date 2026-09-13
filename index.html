@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BHON05 Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHON05 Profile</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Bhongane Elias Radebe</h1>
-  <p>My-project profile</p>
-  <p>HorionPrints EST 2026</p>
+
+    <main class="profile">
+
+        <h1>Bhongane Elias Radebe</h1>
+
+        <section class="blue-section">
+            <h2>My Public Profile</h2>
+
+            <p><strong>Wikidata:</strong> Q107316855</p>
+
+            <div class="red-edit">
+                <h3>Profile Editing</h3>
+
+                <p>
+                    Edit only public information that you choose to publish.
+                </p>
+
+                <button onclick="showEditMode()">
+                    Edit Profile
+                </button>
+            </div>
+
+            <div class="red-edit">
+                <h3>Automatic Check</h3>
+
+                <p id="status">
+                    Ready to check the profile.
+                </p>
+
+                <button onclick="autoFixProfile()">
+                    Auto-Fix / Check
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
